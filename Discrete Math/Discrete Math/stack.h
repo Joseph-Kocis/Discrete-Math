@@ -11,52 +11,65 @@ typedef struct stack
 	node *top;
 } stack;
 
-void push(stack *st, char element)
+stack *create_stack()
 {
-	node *newNode = malloc(sizeof(node));
+	stack *new_stack;
 
-	if (st == NULL)
-	{
-		return;
-	}
+	new_stack = malloc(sizeof(stack));
+	new_stack->top = NULL;
 
-	newNode->next = st->top;
-	newNode->element = element;
-
-	st->top = newNode;
+	return new_stack;
 }
 
-// Returns \0 if the stack is empty
+node *create_node(char element)
+{
+	node *new_node = malloc(sizeof(node));
+	new_node->next = NULL;
+	new_node->element = element;
+
+	return new_node;
+}
+
+void push(stack *st, char element)
+{
+	node *new_node;
+
+	if (st == NULL)
+		return;
+
+	new_node = create_node(element);
+
+	new_node->next = st->top;
+	new_node->element = element;
+
+	st->top = new_node;
+}
+
+// Returns ERROR_CHAR if the stack is empty
 char pop(stack *st)
 {
 	char element;
-	node *newTop;
+	node *new_top;
 
 	if (st == NULL)
-	{
 		return ERROR_CHAR;
-	}
 
 	if (st->top == NULL)
-	{
 		return ERROR_CHAR;
-	}
 
-	newTop = st->top->next;
+	new_top = st->top->next;
 	element = st->top->element;
 	free(st->top);
-	st->top = newTop;
+	st->top = new_top;
 
 	return element;
 }
 
 // Returns 1 if the stack is empty, returns 0 otherwise.
-int isEmpty(stack *st)
+int is_empty(stack *st)
 {
 	if (st == NULL || st->top == NULL)
-	{
 		return 1;
-	}
 
 	return 0;
 }
@@ -64,21 +77,25 @@ int isEmpty(stack *st)
 char top(stack *st)
 {
 	if (st == NULL || st->top == NULL)
-	{
 		return ERROR_CHAR;
-	}
 
 	return st->top->element;
 }
 
 void free_stack(stack *st)
 {
-	node *curTop = st->top, *lastNode;
-	while (curTop != NULL)
+	node *cur_node, *last_node;
+
+	if (st == NULL)
+		return;
+
+	cur_node = st->top;
+
+	while (cur_node != NULL)
 	{
-		lastNode = curTop;
-		curTop = curTop->next;
-		free(lastNode);
+		last_node = cur_node;
+		cur_node = cur_node->next;
+		free(last_node);
 	}
 
 	free(st);
@@ -86,7 +103,12 @@ void free_stack(stack *st)
 
 void print_stack(stack* st)
 {
-	node *top = st->top;
+	node *top;
+
+	if (st == NULL)
+		return;
+
+	top = st->top;
 
 	printf("-----\n");
 
