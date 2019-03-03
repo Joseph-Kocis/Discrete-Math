@@ -7,24 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A60CED58222BB1B700CA461B /* test.c in Sources */ = {isa = PBXBuildFile; fileRef = A60CED57222BB1B700CA461B /* test.c */; };
 		A6354CDB2228BC0B0052EA06 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6354CDA2228BC0B0052EA06 /* AppDelegate.swift */; };
-		A6354CDD2228BC0B0052EA06 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6354CDC2228BC0B0052EA06 /* ViewController.swift */; };
+		A6354CDD2228BC0B0052EA06 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6354CDC2228BC0B0052EA06 /* MasterViewController.swift */; };
 		A6354CE02228BC0B0052EA06 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6354CDE2228BC0B0052EA06 /* Main.storyboard */; };
 		A6354CE22228BC0C0052EA06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6354CE12228BC0C0052EA06 /* Assets.xcassets */; };
 		A6354CE52228BC0C0052EA06 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6354CE32228BC0C0052EA06 /* LaunchScreen.storyboard */; };
-		A6354CEE2228BC9B0052EA06 /* Parser.c in Sources */ = {isa = PBXBuildFile; fileRef = A6354CED2228BC9B0052EA06 /* Parser.c */; };
+		A6A0D4EA222AD00D00452861 /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A0D4E9222AD00D00452861 /* Types.swift */; };
+		A6A1A52F222AF0DF0082960C /* PopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A1A52E222AF0DF0082960C /* PopoverViewController.swift */; };
+		A6F122C2222B6B67005DA3FF /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F122C1222B6B67005DA3FF /* DetailViewController.swift */; };
+		A6F285D8222B2FF800D3525C /* DiscreteSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F285D7222B2FF800D3525C /* DiscreteSplitViewController.swift */; };
+		A6F285DA222B3C5600D3525C /* EquationsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F285D9222B3C5600D3525C /* EquationsTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A60CED57222BB1B700CA461B /* test.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = test.c; sourceTree = "<group>"; };
 		A6354CD72228BC0B0052EA06 /* Discrete Math.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Discrete Math.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6354CDA2228BC0B0052EA06 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A6354CDC2228BC0B0052EA06 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A6354CDC2228BC0B0052EA06 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
 		A6354CDF2228BC0B0052EA06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A6354CE12228BC0C0052EA06 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A6354CE42228BC0C0052EA06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A6354CE62228BC0C0052EA06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A6354CEC2228BC9A0052EA06 /* Discrete Math-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Discrete Math-Bridging-Header.h"; sourceTree = "<group>"; };
-		A6354CED2228BC9B0052EA06 /* Parser.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Parser.c; sourceTree = "<group>"; };
+		A6A0D4E9222AD00D00452861 /* Types.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Types.swift; sourceTree = "<group>"; };
+		A6A1A52E222AF0DF0082960C /* PopoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopoverViewController.swift; sourceTree = "<group>"; };
+		A6F122C1222B6B67005DA3FF /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		A6F285D7222B2FF800D3525C /* DiscreteSplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscreteSplitViewController.swift; sourceTree = "<group>"; };
+		A6F285D9222B3C5600D3525C /* EquationsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquationsTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,9 +68,14 @@
 			isa = PBXGroup;
 			children = (
 				A6354CDA2228BC0B0052EA06 /* AppDelegate.swift */,
-				A6354CDC2228BC0B0052EA06 /* ViewController.swift */,
+				A6F285D7222B2FF800D3525C /* DiscreteSplitViewController.swift */,
+				A6354CDC2228BC0B0052EA06 /* MasterViewController.swift */,
+				A6F122C1222B6B67005DA3FF /* DetailViewController.swift */,
+				A6A1A52E222AF0DF0082960C /* PopoverViewController.swift */,
+				A6F285D9222B3C5600D3525C /* EquationsTableViewCell.swift */,
+				A6A0D4E9222AD00D00452861 /* Types.swift */,
 				A6354CEC2228BC9A0052EA06 /* Discrete Math-Bridging-Header.h */,
-				A6354CED2228BC9B0052EA06 /* Parser.c */,
+				A60CED57222BB1B700CA461B /* test.c */,
 				A6354CDE2228BC0B0052EA06 /* Main.storyboard */,
 				A6354CE12228BC0C0052EA06 /* Assets.xcassets */,
 				A6354CE32228BC0C0052EA06 /* LaunchScreen.storyboard */,
@@ -141,9 +156,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A6354CDD2228BC0B0052EA06 /* ViewController.swift in Sources */,
+				A6354CDD2228BC0B0052EA06 /* MasterViewController.swift in Sources */,
 				A6354CDB2228BC0B0052EA06 /* AppDelegate.swift in Sources */,
-				A6354CEE2228BC9B0052EA06 /* Parser.c in Sources */,
+				A6F285DA222B3C5600D3525C /* EquationsTableViewCell.swift in Sources */,
+				A6A1A52F222AF0DF0082960C /* PopoverViewController.swift in Sources */,
+				A6F285D8222B2FF800D3525C /* DiscreteSplitViewController.swift in Sources */,
+				A6A0D4EA222AD00D00452861 /* Types.swift in Sources */,
+				A6F122C2222B6B67005DA3FF /* DetailViewController.swift in Sources */,
+				A60CED58222BB1B700CA461B /* test.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
